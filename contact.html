@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SafeGuard Pest Control for professional pest control services. Get a free inspection, quote, or schedule a service today.">
+    <meta name="keywords" content="contact pest control, pest control quote, pest control near me, schedule pest control">
+    <meta name="author" content="SafeGuard Pest Control">
+    <meta name="robots" content="index, follow">
+    <title>Contact Us | SafeGuard Pest Control</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314b8a6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z'/%3E%3C/svg%3E">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 50:'#f0fdfa',100:'#ccfbf1',200:'#99f6e4',300:'#5eead4',400:'#2dd4bf',500:'#14b8a6',600:'#0d9488',700:'#0f766e',800:'#115e59',900:'#134e4a' },
+                        secondary: { 50:'#f0fdf4',100:'#dcfce7',200:'#bbf7d0',300:'#86efac',400:'#4ade80',500:'#22c55e',600:'#16a34a',700:'#15803d',800:'#166534',900:'#14532d' }
+                    },
+                    fontFamily: { heading:['Poppins','sans-serif'], body:['Inter','sans-serif'] },
+                    animation: {
+                        'float':'float 6s ease-in-out infinite',
+                        'pulse-slow':'pulse 4s cubic-bezier(0.4,0,0.6,1) infinite',
+                        'slide-up':'slideUp 0.8s ease-out',
+                        'slide-in-left':'slideInLeft 0.8s ease-out',
+                        'slide-in-right':'slideInRight 0.8s ease-out',
+                        'fade-in':'fadeIn 1s ease-out',
+                    },
+                    keyframes: {
+                        float:{'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-20px)'}},
+                        slideUp:{'0%':{transform:'translateY(30px)',opacity:'0'},'100%':{transform:'translateY(0)',opacity:'1'}},
+                        slideInLeft:{'0%':{transform:'translateX(-30px)',opacity:'0'},'100%':{transform:'translateX(0)',opacity:'1'}},
+                        slideInRight:{'0%':{transform:'translateX(30px)',opacity:'0'},'100%':{transform:'translateX(0)',opacity:'1'}},
+                        fadeIn:{'0%':{opacity:'0'},'100%':{opacity:'1'}},
+                    },
+                },
+            },
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-body transition-colors duration-300">
+    
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+                        <i data-lucide="shield-check" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-heading font-bold text-primary-700 dark:text-primary-400">SafeGuard</h1>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 -mt-1">Pest Control</p>
+                    </div>
+                </a>
+                <div class="hidden lg:flex items-center space-x-1">
+                    <div class="relative group" id="home-dropdown">
+                        <button class="nav-link px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 font-medium transition-all hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 dark:hover:text-primary-400 flex items-center gap-1">
+                            Home<i data-lucide="chevron-down" class="w-4 h-4 transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                            <div class="p-2">
+                                <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-all">
+                                    <div class="w-8 h-8 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center"><i data-lucide="home" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i></div>
+                                    <div><p class="font-semibold text-gray-900 dark:text-white text-sm">Home 1</p><p class="text-xs text-gray-500 dark:text-gray-400">General Services</p></div>
+                                </a>
+                                <a href="home-2.html" class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-all">
+                                    <div class="w-8 h-8 bg-gray-100 dark:bg-gray-700 rounded-lg flex items-center justify-center"><i data-lucide="layout-grid" class="w-4 h-4 text-gray-600 dark:text-gray-400"></i></div>
+                                    <div><p class="font-semibold text-gray-900 dark:text-white text-sm">Home 2</p><p class="text-xs text-gray-500 dark:text-gray-400">Service Based</p></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 font-medium transition-all hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 dark:hover:text-primary-400">About Us</a>
+                    <a href="services.html" class="nav-link px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 font-medium transition-all hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 dark:hover:text-primary-400">Services</a>
+                    <a href="packages.html" class="nav-link px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 font-medium transition-all hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 dark:hover:text-primary-400">Packages</a>
+                    <a href="blog.html" class="nav-link px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 font-medium transition-all hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 dark:hover:text-primary-400">Blog</a>
+                    <a href="contact.html" class="nav-link px-4 py-2 rounded-lg text-primary-600 dark:text-primary-400 font-medium transition-all bg-primary-50 dark:bg-primary-900/30">Contact</a>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <button id="theme-toggle" class="p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-all duration-300 group" aria-label="Toggle dark mode">
+                        <i data-lucide="sun" class="w-5 h-5 text-gray-600 dark:text-yellow-400 group-hover:text-primary-600 transition-colors hidden dark:block"></i>
+                        <i data-lucide="moon" class="w-5 h-5 text-gray-600 dark:text-yellow-400 group-hover:text-primary-600 transition-colors block dark:hidden"></i>
+                    </button>
+                    <button id="rtl-toggle" class="p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-all duration-300 group hidden sm:flex items-center" aria-label="Toggle text direction">
+                        <span class="text-xs font-bold text-gray-600 dark:text-gray-300 group-hover:text-primary-600 transition-colors" id="rtl-label">RTL</span>
+                    </button>
+                    <a href="contact.html" class="hidden sm:inline-flex items-center px-5 py-2.5 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl hover:from-primary-600 hover:to-secondary-600 transform hover:-translate-y-0.5 transition-all duration-300">
+                        <i data-lucide="phone" class="w-4 h-4 mr-2"></i>Get a Quote
+                    </a>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-all" aria-label="Open menu">
+                        <i data-lucide="menu" class="w-5 h-5 text-gray-600 dark:text-gray-300"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="lg:hidden hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 shadow-xl">
+            <div class="px-4 py-6 space-y-2">
+                <div class="space-y-1">
+                    <button id="mobile-home-toggle" class="w-full flex items-center justify-between px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium">
+                        <span>Home</span><i data-lucide="chevron-down" class="w-5 h-5 transition-transform" id="mobile-home-icon"></i>
+                    </button>
+                    <div id="mobile-home-submenu" class="hidden pl-4 space-y-1">
+                        <a href="index.html" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 transition-all"><i data-lucide="home" class="w-4 h-4"></i>Home 1 - General Services</a>
+                        <a href="home-2.html" class="flex items-center gap-3 px-4 py-2.5 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 transition-all"><i data-lucide="layout-grid" class="w-4 h-4"></i>Home 2 - Service Based</a>
+                    </div>
+                </div>
+                <a href="about.html" class="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 transition-all">About Us</a>
+                <a href="services.html" class="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 transition-all">Services</a>
+                <a href="packages.html" class="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 transition-all">Packages</a>
+                <a href="blog.html" class="block px-4 py-3 rounded-xl text-gray-600 dark:text-gray-300 font-medium hover:bg-primary-50 dark:hover:bg-primary-900/30 hover:text-primary-600 transition-all">Blog</a>
+                <a href="contact.html" class="block px-4 py-3 rounded-xl text-primary-600 dark:text-primary-400 font-semibold bg-primary-50 dark:bg-primary-900/30">Contact</a>
+                <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <a href="contact.html" class="flex items-center justify-center px-5 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-semibold rounded-xl shadow-lg"><i data-lucide="phone" class="w-4 h-4 mr-2"></i>Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="relative pt-20 bg-gray-900 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/contact-banner.webp" alt="Contact Us" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/50"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-gray-900/30"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 lg:pt-20 lg:pb-28">
+            <nav class="flex items-center gap-2 text-sm text-gray-400 mb-6 animate-slide-in-left">
+                <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                <span class="text-secondary-300">Contact Us</span>
+            </nav>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 max-w-3xl animate-slide-in-left">
+                Get in <span class="text-secondary-400">Touch</span>
+            </h1>
+            <p class="text-lg text-gray-300 max-w-2xl mb-8 animate-slide-in-left">
+                Ready to eliminate pests from your home or business? Contact us for a free inspection, quote, or to schedule a service. Our experts are standing by.
+            </p>
+            <div class="flex flex-wrap gap-4 animate-slide-in-left">
+                <a href="tel:+15551234567" class="inline-flex items-center px-6 py-3.5 bg-white text-primary-600 font-bold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
+                    <i data-lucide="phone" class="w-5 h-5 mr-2"></i>(555) 123-4567
+                </a>
+                <a href="mailto:info@safeguardpest.com" class="inline-flex items-center px-6 py-3.5 bg-white/10 backdrop-blur-sm text-white font-bold rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i>info@safeguardpest.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="py-16 lg:py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-20 relative z-10">
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 animate-on-scroll border border-gray-100 dark:border-gray-700">
+                    <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/30 rounded-2xl flex items-center justify-center mb-4">
+                        <i data-lucide="phone" class="w-7 h-7 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-gray-900 dark:text-white mb-2">Call Us</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">24/7 Emergency Service</p>
+                    <a href="tel:+15551234567" class="text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors">(555) 123-4567</a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 animate-on-scroll border border-gray-100 dark:border-gray-700">
+                    <div class="w-14 h-14 bg-secondary-100 dark:bg-secondary-900/30 rounded-2xl flex items-center justify-center mb-4">
+                        <i data-lucide="mail" class="w-7 h-7 text-secondary-500"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-gray-900 dark:text-white mb-2">Email Us</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">We reply within 24 hours</p>
+                    <a href="mailto:info@safeguardpest.com" class="text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors">info@safeguardpest.com</a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 animate-on-scroll border border-gray-100 dark:border-gray-700">
+                    <div class="w-14 h-14 bg-primary-100 dark:bg-primary-900/30 rounded-2xl flex items-center justify-center mb-4">
+                        <i data-lucide="map-pin" class="w-7 h-7 text-primary-500"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-gray-900 dark:text-white mb-2">Visit Us</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Mon-Fri 8AM-6PM</p>
+                    <p class="text-primary-600 dark:text-primary-400 font-semibold">123 Pest Free Ave, Clean City, ST 12345</p>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 animate-on-scroll border border-gray-100 dark:border-gray-700">
+                    <div class="w-14 h-14 bg-secondary-100 dark:bg-secondary-900/30 rounded-2xl flex items-center justify-center mb-4">
+                        <i data-lucide="clock" class="w-7 h-7 text-secondary-500"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-gray-900 dark:text-white mb-2">Business Hours</h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm mb-3">Emergency available 24/7</p>
+                    <p class="text-primary-600 dark:text-primary-400 font-semibold">Mon-Sat: 7AM - 8PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM + MAP -->
+    <section class="py-16 lg:py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Contact Form -->
+                <div class="animate-on-scroll">
+                    <h2 class="text-3xl font-heading font-bold text-gray-900 dark:text-white mb-2">Send Us a Message</h2>
+                    <p class="text-gray-500 dark:text-gray-400 mb-8">Fill out the form below and we'll get back to you shortly.</p>
+                    
+                    <form id="contact-form" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="first-name" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" required class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-400 transition-all">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" required class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-400 transition-all">
+                            </div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-400 transition-all" placeholder="you@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-400 transition-all" placeholder="(555) 000-0000">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="service" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Service Needed</label>
+                            <select id="service" name="service" class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900 dark:text-white transition-all">
+                                <option value="">Select a service</option>
+                                <option value="cockroach">Cockroach Control</option>
+                                <option value="termite">Termite Treatment</option>
+                                <option value="bedbug">Bed Bug Removal</option>
+                                <option value="mosquito">Mosquito Treatment</option>
+                                <option value="rodent">Rodent Control</option>
+                                <option value="lizard">Lizard Control</option>
+                                <option value="general">General Pest Control</option>
+                                <option value="commercial">Commercial Pest Control</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-400 transition-all resize-none" placeholder="Tell us about your pest problem..."></textarea>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="consent" name="consent" required class="mt-1 w-4 h-4 text-primary-500 bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 rounded focus:ring-primary-500">
+                            <label for="consent" class="text-sm text-gray-500 dark:text-gray-400">I agree to the <a href="#" class="text-primary-600 dark:text-primary-400 hover:underline">Privacy Policy</a> and consent to being contacted regarding my inquiry.</label>
+                        </div>
+                        <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-500 to-secondary-500 text-white font-bold rounded-xl shadow-lg hover:shadow-xl hover:from-primary-600 hover:to-secondary-600 transform hover:-translate-y-0.5 transition-all duration-300">
+                            <i data-lucide="send" class="w-5 h-5 mr-2"></i>Send Message
+                        </button>
+                    </form>
+
+                    <!-- Success Message (hidden by default) -->
+                    <div id="contact-success" class="hidden mt-6 p-6 bg-secondary-50 dark:bg-secondary-900/20 border border-secondary-200 dark:border-secondary-800 rounded-2xl">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-secondary-100 dark:bg-secondary-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="check-circle-2" class="w-6 h-6 text-secondary-600 dark:text-secondary-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-lg text-gray-900 dark:text-white mb-1">Message Sent Successfully!</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Thank you for contacting SafeGuard Pest Control. We'll get back to you within 24 hours. For urgent matters, call us directly at <a href="tel:+15551234567" class="text-primary-600 dark:text-primary-400 font-semibold hover:underline">(555) 123-4567</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map & Info -->
+                <div class="animate-on-scroll">
+                    <!-- Map Placeholder -->
+                    <div class="bg-gradient-to-br from-primary-100 to-secondary-100 dark:from-primary-900/30 dark:to-secondary-900/30 rounded-2xl h-72 sm:h-80 flex items-center justify-center mb-8 border border-primary-200 dark:border-primary-800">
+                        <div class="text-center">
+                            <i data-lucide="map" class="w-16 h-16 text-primary-400 mx-auto mb-4"></i>
+                            <p class="text-gray-500 dark:text-gray-400 font-medium">Interactive Map</p>
+                            <p class="text-gray-400 dark:text-gray-500 text-sm">123 Pest Free Ave, Clean City, ST 12345</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact Cards -->
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-5 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all">
+                            <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="phone-call" class="w-6 h-6 text-primary-500"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-heading font-bold text-gray-900 dark:text-white">24/7 Emergency Line</h4>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm">Immediate response for urgent pest emergencies</p>
+                            </div>
+                            <a href="tel:+15551234567" class="px-4 py-2 bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 font-semibold rounded-xl hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-all text-sm whitespace-nowrap">Call Now</a>
+                        </div>
+                        <div class="flex items-center gap-4 p-5 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all">
+                            <div class="w-12 h-12 bg-secondary-100 dark:bg-secondary-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="calendar" class="w-6 h-6 text-secondary-500"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-heading font-bold text-gray-900 dark:text-white">Schedule a Visit</h4>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm">Book an inspection at your convenience</p>
+                            </div>
+                            <a href="tel:+15551234567" class="px-4 py-2 bg-secondary-50 dark:bg-secondary-900/30 text-secondary-600 dark:text-secondary-400 font-semibold rounded-xl hover:bg-secondary-100 dark:hover:bg-secondary-900/50 transition-all text-sm whitespace-nowrap">Book</a>
+                        </div>
+                        <div class="flex items-center gap-4 p-5 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-all">
+                            <div class="w-12 h-12 bg-primary-100 dark:bg-primary-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="message-circle" class="w-6 h-6 text-primary-500"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-heading font-bold text-gray-900 dark:text-white">Live Chat</h4>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm">Chat with our support team online</p>
+                            </div>
+                            <a href="#" class="px-4 py-2 bg-primary-50 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 font-semibold rounded-xl hover:bg-primary-100 dark:hover:bg-primary-900/50 transition-all text-sm whitespace-nowrap">Chat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE AREAS -->
+    <section class="py-16 lg:py-20 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 animate-on-scroll">
+                <span class="inline-flex items-center px-4 py-1.5 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 rounded-full text-sm font-semibold mb-4">
+                    <i data-lucide="map-pin" class="w-4 h-4 mr-1.5"></i>Service Areas
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                    Areas We <span class="text-primary-600 dark:text-primary-400">Serve</span>
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+                    We provide professional pest control services throughout the greater metropolitan area and surrounding communities.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 animate-on-scroll">
+                <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                    <span class="text-gray-700 dark:text-gray-300 font-medium">Clean City</span>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                    <span class="text-gray-700 dark:text-gray-300 font-medium">Green Valley</span>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                    <span class="text-gray-700 dark:text-gray-300 font-medium">Safe Harbor</span>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                    <span class="text-gray-700 dark:text-gray-300 font-medium">Oak Ridge</span>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                    <span class="text-gray-700 dark:text-gray-300 font-medium">Riverside</span>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                    <span class="text-gray-700 dark:text-gray-300 font-medium">Pine Hills</span>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                    <span class="text-gray-700 dark:text-gray-300 font-medium">Lakewood</span>
+                </div>
+                <div class="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 transition-all">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 flex-shrink-0"></i>
+                    <span class="text-gray-700 dark:text-gray-300 font-medium">And More...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 lg:py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 animate-on-scroll">
+                <span class="inline-flex items-center px-4 py-1.5 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 rounded-full text-sm font-semibold mb-4">
+                    <i data-lucide="help-circle" class="w-4 h-4 mr-1.5"></i>FAQ
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4">
+                    Frequently Asked <span class="text-primary-600 dark:text-primary-400">Questions</span>
+                </h2>
+            </div>
+            <div class="space-y-4 animate-on-scroll">
+                <div class="faq-item bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="font-heading font-semibold text-gray-900 dark:text-white pr-4">How quickly can you respond to a pest emergency?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 flex-shrink-0 ml-4 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">We offer 24/7 emergency pest control services. For urgent situations like wasp nest removal, rodent intrusions, or severe infestations, we can typically dispatch a technician within 1-2 hours during business hours, or first thing in the morning for after-hours calls.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="font-heading font-semibold text-gray-900 dark:text-white pr-4">Do you offer free inspections?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 flex-shrink-0 ml-4 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Yes! We offer free initial inspections for most pest control services. Our technician will assess your property, identify the pest species, evaluate the severity of the infestation, and provide a customized treatment plan with transparent pricing — all at no cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="font-heading font-semibold text-gray-900 dark:text-white pr-4">Are your treatments safe for pets and children?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 flex-shrink-0 ml-4 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Absolutely. We use EPA-approved products applied in targeted areas that are inaccessible to children and pets. For indoor treatments, we provide specific safety instructions including ventilation times and when it's safe to re-enter treated areas. We also offer organic and low-toxicity options upon request.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="font-heading font-semibold text-gray-900 dark:text-white pr-4">What is your service warranty?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 flex-shrink-0 ml-4 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">All our services come with a satisfaction guarantee. Most treatments include a 30-day warranty with free re-treatment if pests return. Termite treatments include a 5-year warranty. If you're not satisfied with the results, we'll come back and re-treat at no additional cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full flex items-center justify-between px-6 py-5 text-left">
+                        <span class="font-heading font-semibold text-gray-900 dark:text-white pr-4">How do I prepare for a pest control treatment?</span>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 flex-shrink-0 ml-4 transition-transform"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 pb-5">
+                        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Preparation varies by treatment type. For most services, we'll provide a detailed preparation checklist when you book your appointment. Generally, you'll need to clear the treatment area, cover or remove food items, and ensure we can access key areas. For termite treatments, you may need to move furniture away from walls. We'll guide you through every step.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-12 lg:py-16 bg-gradient-to-br from-secondary-900 via-secondary-800 to-primary-900 relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-secondary-400/15 rounded-full blur-3xl animate-float"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-400/15 rounded-full blur-3xl animate-float" style="animation-delay:-3s;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center animate-on-scroll">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white mb-4">
+                Ready to Get <span class="text-secondary-400">Started?</span>
+            </h2>
+            <p class="text-gray-300 mb-6 max-w-xl mx-auto">
+                Don't let pests take over your home. Contact SafeGuard today for a free inspection and customized treatment plan.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+15551234567" class="inline-flex items-center justify-center px-8 py-4 bg-white text-secondary-600 font-bold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300">
+                    <i data-lucide="phone" class="w-5 h-5 mr-2"></i>(555) 123-4567
+                </a>
+                <a href="mailto:info@safeguardpest.com" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-bold rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2"></i>Send Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 relative overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-900/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary-900/20 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="relative border-b border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 lg:p-10">
+                    <div>
+                        <h3 class="text-2xl font-heading font-bold text-white mb-2">Need Emergency Pest Control?</h3>
+                        <p class="text-primary-100">Our team is available 24/7 for emergency situations. Call now!</p>
+                    </div>
+                    <a href="tel:+15551234567" class="inline-flex items-center px-8 py-4 bg-white text-primary-600 font-bold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap">
+                        <i data-lucide="phone" class="w-5 h-5 mr-2"></i>Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-3 mb-6 group">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
+                            <i data-lucide="shield-check" class="w-7 h-7 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-heading font-bold text-primary-400 group-hover:text-white transition-colors">SafeGuard</h3>
+                            <p class="text-xs text-gray-400">Pest Control</p>
+                        </div>
+                    </a>
+                    <p class="text-gray-400 mb-6 leading-relaxed">Professional pest control and fumigation services for homes and businesses. Licensed, insured, and guaranteed results.</p>
+                    <div class="flex space-x-3">
+                        <a href="https://facebook.com/safeguardpestcontrol" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 hover:bg-primary-500 rounded-xl flex items-center justify-center transition-all duration-300" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/safeguardpest" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 hover:bg-primary-500 rounded-xl flex items-center justify-center transition-all duration-300" aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/safeguardpestcontrol" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 hover:bg-primary-500 rounded-xl flex items-center justify-center transition-all duration-300" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/company/safeguardpestcontrol" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-gray-800 hover:bg-primary-500 rounded-xl flex items-center justify-center transition-all duration-300" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-heading font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Home</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Services</a></li>
+                        <li><a href="packages.html" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Packages</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-heading font-bold text-white mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="service-details.html?service=cockroach" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Cockroach Control</a></li>
+                        <li><a href="service-details.html?service=termite" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Termite Treatment</a></li>
+                        <li><a href="service-details.html?service=bedbug" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Bed Bug Removal</a></li>
+                        <li><a href="service-details.html?service=mosquito" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Mosquito Treatment</a></li>
+                        <li><a href="service-details.html?service=rodent" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Rodent Control</a></li>
+                        <li><a href="service-details.html?service=lizard" class="text-gray-400 hover:text-primary-400 transition-colors flex items-center"><i data-lucide="chevron-right" class="w-4 h-4 mr-2"></i>Lizard Control</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="text-lg font-heading font-bold text-white mb-6">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for pest control tips, seasonal alerts, and exclusive offers.</p>
+                    <form class="newsletter-form space-y-3">
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-l-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent text-white placeholder-gray-500 text-sm">
+                            <button type="submit" class="px-4 py-3 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-r-xl hover:from-primary-600 hover:to-secondary-600 transition-all">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="text-gray-500 text-sm">&copy; 2026 SafeGuard Pest Control. All rights reserved.</p>
+                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+                        <a href="privacy.html" class="text-gray-500 hover:text-primary-400 transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-primary-400 transition-colors">Terms of Service</a>
+                        <a href="sitemap.html" class="text-gray-500 hover:text-primary-400 transition-colors">Sitemap</a>
+                        <a href="404.html" class="text-gray-500 hover:text-primary-400 transition-colors">404</a>
+                        <a href="coming-soon.html" class="text-gray-500 hover:text-primary-400 transition-colors">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 opacity-0 invisible z-50 flex items-center justify-center" aria-label="Back to top">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Contact Form Handling
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('contact-success');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalHTML = submitBtn.innerHTML;
+
+                // Show loading
+                submitBtn.innerHTML = '<svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Sending...';
+                submitBtn.disabled = true;
+
+                setTimeout(() => {
+                    // Hide form, show success
+                    contactForm.style.display = 'none';
+                    successMessage.classList.remove('hidden');
+                    
+                    // Re-init Lucide icons for the success message
+                    if (window.lucide) lucide.createIcons();
+                    
+                    // Also show notification
+                    if (typeof showNotification === 'function') {
+                        showNotification('Message sent successfully!', 'success');
+                    }
+                }, 1500);
+            });
+        }
+    </script>
+</body>
+</html>
