@@ -796,10 +796,10 @@
 
         // FAQ
         const faqHTML = s.faq.map(item => `
-            <div class="faq-item bg-gray-50 dark:bg-gray-700/50 rounded-xl overflow-hidden">
-                <button class="faq-question w-full flex items-center justify-between px-6 py-4 text-left">
-                    <span class="font-heading font-semibold text-gray-900 dark:text-white">${item.q}</span>
-                    <i data-lucide="chevron-down" class="w-5 h-5 text-gray-400 flex-shrink-0 ml-4 transition-transform"></i>
+            <div class="faq-item bg-gray-50 dark:bg-gray-700/50 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-600">
+                <button class="faq-question w-full flex items-center justify-between px-6 py-4 text-left cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600/50 transition-colors">
+                    <span class="font-heading font-semibold text-gray-900 dark:text-white pr-4">${item.q}</span>
+                    <svg class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform faq-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </button>
                 <div class="faq-answer hidden px-6 pb-4">
                     <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">${item.a}</p>
@@ -820,29 +820,24 @@
             }
         });
 
-        // Re-init Lucide icons and FAQ
+        // Re-init Lucide icons
         if (window.lucide) lucide.createIcons();
-        initFAQ();
     }
-
-    // FAQ toggle
-    function initFAQ() {
-        document.querySelectorAll('.faq-question').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const answer = btn.nextElementSibling;
-                const icon = btn.querySelector('i');
-                const isOpen = !answer.classList.contains('hidden');
-                document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
-                document.querySelectorAll('.faq-question i').forEach(i => i.style.transform = 'rotate(0deg)');
-                if (!isOpen) {
-                    answer.classList.remove('hidden');
-                    icon.style.transform = 'rotate(180deg)';
-                }
-            });
-        });
-    }
-
+    
     renderService(getServiceKey());
+    </script>
+    <script>
+    document.addEventListener('click', function(e) {
+        var btn = e.target.closest('.faq-question');
+        if (!btn) return;
+        var item = btn.parentElement;
+        var answer = item.querySelector('.faq-answer');
+        var chevron = btn.querySelector('.faq-chevron');
+        if (!answer) return;
+        var wasOpen = !answer.classList.contains('hidden');
+        answer.classList.toggle('hidden');
+        if (chevron) chevron.style.transform = wasOpen ? '' : 'rotate(180deg)';
+    });
     </script>
 </body>
 </html>

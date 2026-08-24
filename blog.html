@@ -189,13 +189,13 @@
     <section class="py-8 bg-gray-50 dark:bg-gray-900 border-y border-gray-200 dark:border-gray-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex lg:justify-center gap-3 overflow-x-auto pb-2 scrollbar-hide">
-                <button class="px-5 py-2.5 bg-primary-500 text-white rounded-full text-sm font-semibold whitespace-nowrap transition-all">All</button>
-                <button class="px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Cockroach</button>
-                <button class="px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Termite</button>
-                <button class="px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Bed Bugs</button>
-                <button class="px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Mosquito</button>
-                <button class="px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Rodent</button>
-                <button class="px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Seasonal Tips</button>
+                <button data-filter="all" class="filter-btn px-5 py-2.5 bg-primary-500 text-white rounded-full text-sm font-semibold whitespace-nowrap transition-all">All</button>
+                <button data-filter="cockroach" class="filter-btn px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Cockroach</button>
+                <button data-filter="termite" class="filter-btn px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Termite</button>
+                <button data-filter="bed-bugs" class="filter-btn px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Bed Bugs</button>
+                <button data-filter="mosquito" class="filter-btn px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Mosquito</button>
+                <button data-filter="rodent" class="filter-btn px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Rodent</button>
+                <button data-filter="seasonal-tips" class="filter-btn px-5 py-2.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium whitespace-nowrap hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-all">Seasonal Tips</button>
             </div>
         </div>
     </section>
@@ -206,7 +206,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Post 1: Cockroach -->
-                <div class="group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col">
+                <div data-category="cockroach" class="blog-post group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col">
                     <div class="h-48 relative">
                         <img src="images/blog-2.webp" alt="Cockroach in kitchen" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
@@ -232,7 +232,7 @@
                 </div>
 
                 <!-- Post 2: Bed Bugs -->
-                <div class="group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.1s;">
+                <div data-category="bed-bugs" class="blog-post group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.1s;">
                     <div class="h-48 relative">
                         <img src="images/blog-3.webp" alt="Bed bug on mattress" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
@@ -258,7 +258,7 @@
                 </div>
 
                 <!-- Post 3: Seasonal Tips -->
-                <div class="group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.2s;">
+                <div data-category="seasonal-tips" class="blog-post group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.2s;">
                     <div class="h-48 relative">
                         <img src="images/blog-4.webp" alt="Summer pest protection" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
@@ -284,7 +284,7 @@
                 </div>
 
                 <!-- Post 4: Termite -->
-                <div class="group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.3s;">
+                <div data-category="termite" class="blog-post group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.3s;">
                     <div class="h-48 relative">
                         <img src="images/blog-5.webp" alt="Termite home inspection" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
@@ -310,7 +310,7 @@
                 </div>
 
                 <!-- Post 5: Mosquito -->
-                <div class="group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.4s;">
+                <div data-category="mosquito" class="blog-post group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.4s;">
                     <div class="h-48 relative">
                         <img src="images/blog-6.webp" alt="Natural mosquito repellent plants" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
@@ -336,7 +336,7 @@
                 </div>
 
                 <!-- Post 6: Rodent -->
-                <div class="group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.5s;">
+                <div data-category="rodent" class="blog-post group bg-gray-50 dark:bg-gray-700/50 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 animate-on-scroll flex flex-col" style="animation-delay:0.5s;">
                     <div class="h-48 relative">
                         <img src="images/blog-7.webp" alt="Rodent entry points in home" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full">
@@ -526,6 +526,26 @@
         <i data-lucide="arrow-up" class="w-5 h-5"></i>
     </button>
 
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('bg-primary-500', 'text-white', 'font-semibold');
+                    b.classList.add('bg-gray-100', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300', 'font-medium');
+                });
+                btn.classList.add('bg-primary-500', 'text-white', 'font-semibold');
+                btn.classList.remove('bg-gray-100', 'dark:bg-gray-700', 'text-gray-700', 'dark:text-gray-300', 'font-medium');
+                document.querySelectorAll('.blog-post').forEach(post => {
+                    if (filter === 'all' || post.dataset.category === filter) {
+                        post.style.display = '';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
