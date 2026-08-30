@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==================== RTL/LTR TOGGLE ====================
     const rtlToggle = document.getElementById('rtl-toggle');
     const rtlLabel = document.getElementById('rtl-label');
+    const rtlToggleMobile = document.getElementById('rtl-toggle-mobile');
+    const rtlLabelMobile = document.getElementById('rtl-label-mobile');
     
     // Check for saved RTL preference
     function getRTLPreference() {
@@ -67,10 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
             html.setAttribute('dir', 'rtl');
             html.setAttribute('lang', 'ar');
             if (rtlLabel) rtlLabel.textContent = 'LTR';
+            if (rtlLabelMobile) rtlLabelMobile.textContent = 'LTR';
         } else {
             html.setAttribute('dir', 'ltr');
             html.setAttribute('lang', 'en');
             if (rtlLabel) rtlLabel.textContent = 'RTL';
+            if (rtlLabelMobile) rtlLabelMobile.textContent = 'RTL';
         }
         localStorage.setItem('direction', isRTL ? 'rtl' : 'ltr');
     }
@@ -78,9 +82,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize direction
     applyDirection(getRTLPreference());
     
-    // Toggle direction
+    // Toggle direction (desktop)
     if (rtlToggle) {
         rtlToggle.addEventListener('click', function() {
+            const isRTL = html.getAttribute('dir') === 'rtl';
+            applyDirection(!isRTL);
+        });
+    }
+    
+    // Toggle direction (mobile)
+    if (rtlToggleMobile) {
+        rtlToggleMobile.addEventListener('click', function() {
             const isRTL = html.getAttribute('dir') === 'rtl';
             applyDirection(!isRTL);
         });
