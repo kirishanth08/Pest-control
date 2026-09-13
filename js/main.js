@@ -249,6 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const start = 0;
         const increment = target / (duration / 16);
         let current = start;
+        const suffix = element.getAttribute('data-suffix') !== null ? element.getAttribute('data-suffix') : (element.textContent.trim().endsWith('+') ? '+' : (target >= 1000 ? '+' : ''));
         
         const timer = setInterval(() => {
             current += increment;
@@ -259,9 +260,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (target >= 1000) {
-                element.textContent = Math.floor(current).toLocaleString() + '+';
+                element.textContent = Math.floor(current).toLocaleString() + suffix;
             } else {
-                element.textContent = Math.floor(current);
+                element.textContent = Math.floor(current) + suffix;
             }
         }, 16);
     }
