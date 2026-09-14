@@ -331,32 +331,123 @@ textarea:focus {
     box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.2);
 }
 
-/* Footer newsletter layout stability across all viewports (768px, 1024px, etc.) */
+/* Footer form layout stability across all viewports */
+footer {
+    overflow-x: hidden !important;
+}
+
+footer .grid > * {
+    min-width: 0 !important;
+}
+
+footer form,
 .newsletter-form {
     width: 100%;
     max-width: 100%;
 }
 
+footer form .flex,
 .newsletter-form .flex {
     display: flex;
     width: 100%;
     min-width: 0;
 }
 
+footer form input[type="email"],
 .newsletter-form input[type="email"] {
     min-width: 0 !important;
     width: 100% !important;
     flex: 1 1 0% !important;
 }
 
+footer form button[type="submit"],
 .newsletter-form button[type="submit"] {
     flex-shrink: 0 !important;
+}
+
+/* Global footer social links layout safety: prevent icon overflow */
+footer .flex.space-x-3 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+}
+
+footer .flex.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* ==================== 1024px RESPONSIVE FOOTER & LAYOUT ==================== */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    /* Optimize horizontal container padding at 1024px for maximum column breathability */
+    footer .max-w-7xl {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    /* Optimize footer grid column gap to provide comfortable width per column */
+    footer .grid.lg\:grid-cols-4,
+    footer .grid[class*="lg:grid-cols-4"] {
+        gap: 1.5rem !important;
+    }
+
+    /* Ensure social icons fit gracefully on a single row at 1024px */
+    footer .flex.space-x-3 a {
+        width: 2.25rem !important;
+        height: 2.25rem !important;
+        flex-shrink: 0 !important;
+    }
+    footer .flex.space-x-3 a svg {
+        width: 1.125rem !important;
+        height: 1.125rem !important;
+    }
+
+    /* Newsletter form input padding optimization for 1024px */
+    footer input[type="email"],
+    .newsletter-form input[type="email"] {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+        font-size: 0.8125rem !important;
+    }
+
+    footer button[type="submit"],
+    .newsletter-form button[type="submit"] {
+        padding-left: 0.875rem !important;
+        padding-right: 0.875rem !important;
+    }
+
+    /* Copyright links spacing at 1024px */
+    footer .border-t .flex-wrap {
+        gap: 0.5rem 1rem !important;
+    }
+    footer .border-t .flex-wrap a {
+        font-size: 0.8125rem !important;
+    }
+
+    /* Pre-footer CTA banner at 1024px */
+    footer .relative.border-b .bg-gradient-to-r {
+        padding: 1.75rem 2rem !important;
+        gap: 1.25rem !important;
+    }
+    footer .relative.border-b h3 {
+        font-size: 1.35rem !important;
+    }
 }
 
 /* ==================== RTL SUPPORT ==================== */
 [dir="rtl"] .nav-link::after {
     left: 50%;
     transform: translateX(-50%);
+}
+
+[dir="rtl"] footer input[type="email"],
+[dir="rtl"] .newsletter-form input[type="email"] {
+    border-radius: 0 0.75rem 0.75rem 0 !important;
+}
+
+[dir="rtl"] footer button[type="submit"],
+[dir="rtl"] .newsletter-form button[type="submit"] {
+    border-radius: 0.75rem 0 0 0.75rem !important;
 }
 
 [dir="rtl"] .mr-2 {

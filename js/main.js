@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let lastScrollTop = 0;
     
     function handleNavbarScroll() {
+        if (!navbar) return;
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
         if (scrollTop > 50) {
@@ -199,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                const navbarHeight = navbar.offsetHeight;
+                const navbarHeight = navbar ? navbar.offsetHeight : 0;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
                 
                 window.scrollTo({
@@ -339,6 +340,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backToTopBtn = document.getElementById('back-to-top');
     
     function toggleBackToTop() {
+        if (!backToTopBtn) return;
         if (window.pageYOffset > 300) {
             backToTopBtn.classList.remove('opacity-0', 'invisible');
             backToTopBtn.classList.add('opacity-100', 'visible');
@@ -450,7 +452,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // ==================== NEWSLETTER FORM ====================
-    const newsletterForms = document.querySelectorAll('.newsletter-form');
+    const newsletterForms = document.querySelectorAll('.newsletter-form, footer form');
     
     newsletterForms.forEach(form => {
         form.addEventListener('submit', function(e) {
